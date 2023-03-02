@@ -1,27 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Examination : MonoBehaviour
 {
     //[SerializeField] EvidenceData evidenceData;
     [SerializeField] GameObject zoomedInSprite;
-    [SerializeField] GameObject highlight;
-
-    private void OnMouseEnter()
+    
+    public void EvidenceClicked()
     {
-        // highlight evidence
-        highlight.SetActive(true);
-    }
-
-    private void OnMouseExit()
-    {
-        // unhighlight evidence
-        highlight.SetActive(false);
+        if (zoomedInSprite != null && zoomedInSprite.activeInHierarchy)
+        {
+            zoomedInSprite.SetActive(false);
+        }
+        else
+        {
+            zoomedInSprite.SetActive(true);
+        }
     }
 
     private void OnMouseDown()
     {
-        // pull up examine interface
+        if (zoomedInSprite != null && zoomedInSprite.activeInHierarchy)
+        {
+            zoomedInSprite.SetActive(false);
+        }
+        else
+        {
+            zoomedInSprite.SetActive(true);
+        }
     }
 }
