@@ -333,7 +333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is a piece of evidence.
+  m_text: Insert description here
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -633,7 +633,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b229da41575136f4ca178b798231368e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  evidenceData: {fileID: 11400000, guid: 468c512b9e69b704a8456ec22aa7d520, type: 2}
   zoomedInSprite: {fileID: 1155267986}
+  descriptionText: {fileID: 529047628}
+  zoomedInImage: {fileID: 563343133}
 --- !u!61 &738564525
 BoxCollider2D:
   m_ObjectHideFlags: 0
