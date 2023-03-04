@@ -19,6 +19,11 @@ public class Examination : MonoBehaviour
         }
         else
         {
+            if (FoundEvidence.foundList[evidenceData.trackingIndex] == false)
+            {
+                FoundEvidence.foundList[evidenceData.trackingIndex] = true;
+            }
+
             descriptionText.text = evidenceData.evidenceDescription;
             zoomedInImage.sprite = evidenceData.evidenceSprite;
             zoomedInSprite.SetActive(true);
