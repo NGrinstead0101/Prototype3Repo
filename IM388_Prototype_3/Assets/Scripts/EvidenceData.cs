@@ -10,5 +10,5 @@ public class EvidenceData : ScriptableObject
     public string evidenceName;
     public string evidenceDescription;
 
-    public Sprite evidenceSprite;
+    //public Sprite evidenceSprite;
 }
