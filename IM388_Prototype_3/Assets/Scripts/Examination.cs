@@ -11,24 +11,46 @@ public class Examination : MonoBehaviour
     [SerializeField] TextMeshProUGUI descriptionText;
     //[SerializeField] Image zoomedInImage;
 
+    bool canBeClicked = true;
+
+    private void Update()
+    {
+        if (zoomedInSprite != null && zoomedInSprite.activeInHierarchy && Input.GetMouseButtonDown(0))
+        {
+            EvidenceClicked();
+            canBeClicked = false;
+            StartCoroutine(PreventDoubleClick());
+        }
+    }
+
     public void EvidenceClicked()
     {
-        if (zoomedInSprite != null && zoomedInSprite.activeInHierarchy)
+        if (canBeClicked)
         {
-            zoomedInSprite.SetActive(false);
-        }
-        else
-        {
-            if (FoundEvidence.foundList[evidenceData.trackingIndex] == false)
+            if (zoomedInSprite != null && zoomedInSprite.activeInHierarchy)
             {
-                Debug.Log("The bool at index " + evidenceData.trackingIndex + " was " + FoundEvidence.foundList[evidenceData.trackingIndex]);
-                FoundEvidence.foundList[evidenceData.trackingIndex] = true;
-                Debug.Log("Now it is " + FoundEvidence.foundList[evidenceData.trackingIndex]);
+                zoomedInSprite.SetActive(false);
             }
+            else
+            {
+                if (FoundEvidence.foundList[evidenceData.trackingIndex] == false)
+                {
+                    FoundEvidence.foundList[evidenceData.trackingIndex] = true;
+                }
 
-            descriptionText.text = evidenceData.evidenceDescription;
-            //zoomedInImage.sprite = evidenceData.evidenceSprite;
-            zoomedInSprite.SetActive(true);
+                descriptionText.text = evidenceData.evidenceDescription;
+                //zoomedInImage.sprite = evidenceData.evidenceSprite;
+                zoomedInSprite.SetActive(true);
+            }
         }
+    }
+
+    IEnumerator PreventDoubleClick()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        canBeClicked = true;
+
+        StopAllCoroutines();
     }
 }
