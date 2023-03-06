@@ -13,6 +13,9 @@ public class Examination : MonoBehaviour
 
     bool canBeClicked = true;
 
+    /// <summary>
+    /// Stops examining when clicking anywhere
+    /// </summary>
     private void Update()
     {
         if (zoomedInSprite != null && zoomedInSprite.activeInHierarchy && Input.GetMouseButtonDown(0))
@@ -23,6 +26,9 @@ public class Examination : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// When clicked, toggles the zoomed in sprite and adds evidence when found
+    /// </summary>
     public void EvidenceClicked()
     {
         if (canBeClicked)
@@ -33,6 +39,7 @@ public class Examination : MonoBehaviour
             }
             else
             {
+                // If this evidence is new, update the found list
                 if (FoundEvidence.foundList[evidenceData.trackingIndex] == false)
                 {
                     FoundEvidence.foundList[evidenceData.trackingIndex] = true;
@@ -45,6 +52,10 @@ public class Examination : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Ensures player can't re-inspect evidence when clicking it
+    /// </summary>
+    /// <returns>1/10 of a second</returns>
     IEnumerator PreventDoubleClick()
     {
         yield return new WaitForSeconds(0.1f);
