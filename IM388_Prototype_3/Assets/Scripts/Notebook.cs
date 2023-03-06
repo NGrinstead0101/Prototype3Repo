@@ -13,6 +13,9 @@ public class Notebook : MonoBehaviour
 
     [SerializeField] EvidenceTracker evidenceTracker;
 
+    /// <summary>
+    /// Finds Note objects and initializes variables
+    /// </summary>
     private void Awake()
     {
         noteObjects = GameObject.FindGameObjectsWithTag("Note");
@@ -30,6 +33,9 @@ public class Notebook : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Toggles interface when right clicking
+    /// </summary>
     private void Update()
     {
         if (Input.GetMouseButtonDown(1) && canClick)
@@ -40,6 +46,9 @@ public class Notebook : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Toggles the notebook UI and reveals notes for evidence the player has found
+    /// </summary>
     private void ToggleNotebook()
     {
         notebookActive = !notebookActive;
@@ -65,6 +74,10 @@ public class Notebook : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Prevents double inputs when toggling the notebook
+    /// </summary>
+    /// <returns></returns>
     IEnumerator PreventDoubleClick()
     {
         yield return new WaitForSeconds(0.25f);
