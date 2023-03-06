@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cece04559cbf5249a0f7d583139a84a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goBack: 0
+  goBack: PhotoScene
 --- !u!50 &-2041286742122583439
 Rigidbody2D:
   serializedVersion: 4
