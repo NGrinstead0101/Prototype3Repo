@@ -11,8 +11,32 @@ public class Note : MonoBehaviour
     /// Updates button text with evidence
     /// </summary>
     /// <param name="noteContents"></param>
+    ///  //position of mouse
+    Vector2 mousePosition;
+    public bool follow;
+
+    private void Start()
+    {
+        follow = false;
+    }
+
+    void Update()
+    {
+        //set mousePostition
+        mousePosition = Input.mousePosition;
+        if (follow == true)
+        {
+            transform.position = mousePosition;
+            Debug.Log(mousePosition);
+        }
+    }
     public void RevealNote(string noteContents)
     {
         noteText.text = noteContents;
+    }
+
+    public void toggleFollow()
+    {
+        follow = !follow;
     }
 }

@@ -1377,6 +1377,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Note
       objectReference: {fileID: 0}
+    - target: {fileID: 2102424535358124061, guid: da54471dad075d54f91ecb0bce3605aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2102424535358124061, guid: da54471dad075d54f91ecb0bce3605aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2102424535358124061, guid: da54471dad075d54f91ecb0bce3605aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7839320352501402985, guid: da54471dad075d54f91ecb0bce3605aa, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
