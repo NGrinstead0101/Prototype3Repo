@@ -151,6 +151,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteText: {fileID: 1880353975573160754}
   follow: 0
+  boundUp: 380
+  boundDown: 10
+  boundLeft: 60
+  boundRight: 800
 --- !u!61 &-53823835989326089
 BoxCollider2D:
   m_ObjectHideFlags: 0

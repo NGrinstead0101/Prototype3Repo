@@ -14,6 +14,10 @@ public class Note : MonoBehaviour
     ///  //position of mouse
     Vector2 mousePosition;
     public bool follow;
+    public int boundUp;
+    public int boundDown;
+    public int boundLeft;
+    public int boundRight;
 
     private void Start()
     {
@@ -27,6 +31,22 @@ public class Note : MonoBehaviour
         if (follow == true)
         {
             transform.position = mousePosition;
+        }
+        if (transform.position.x >= boundRight)
+        {
+            transform.position = new Vector2(boundRight, transform.position.y);
+        }
+        if (transform.position.x <= boundLeft)
+        {
+            transform.position = new Vector2(boundLeft, transform.position.y);
+        }
+        if (transform.position.y >= boundUp)
+        {
+            transform.position = new Vector2(transform.position.x, boundUp);
+        }
+        if (transform.position.y <= boundDown)
+        {
+            transform.position = new Vector2(transform.position.x, boundDown);
         }
     }
     public void RevealNote(string noteContents)
