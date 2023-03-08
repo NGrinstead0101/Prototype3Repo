@@ -139,12 +139,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6586612808579217094, guid: 8fe30117a72be5b49960618950f5b35b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1179
+      objectReference: {fileID: 0}
+    - target: {fileID: 6586612808579217094, guid: 8fe30117a72be5b49960618950f5b35b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.095089
+      value: -7.59
       objectReference: {fileID: 0}
     - target: {fileID: 6586612808579217094, guid: 8fe30117a72be5b49960618950f5b35b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.2341676
+      value: 4.12
       objectReference: {fileID: 0}
     - target: {fileID: 6586612808579217094, guid: 8fe30117a72be5b49960618950f5b35b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -180,6 +184,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fe30117a72be5b49960618950f5b35b, type: 3}
+--- !u!1 &531438845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 531438847}
+  - component: {fileID: 531438846}
+  m_Layer: 0
+  m_Name: PhotoTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &531438846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531438845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a90b90327da3b6439da143be3e9d1a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  photoIndex: 2
+--- !u!4 &531438847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531438845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.413151, y: 7.245293, z: -0.37834004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1187514070
 GameObject:
   m_ObjectHideFlags: 0
