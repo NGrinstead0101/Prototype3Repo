@@ -33,7 +33,7 @@ public class VerdictChecker : MonoBehaviour
         bool isMatch = true;
 
         // Checks date
-        if (dateDropdown.options[dateDropdown.value].text.CompareTo("TV") != 0)
+        if (dateDropdown.options[dateDropdown.value].text.CompareTo("February") != 0)
         {
             isMatch = false;
         }
@@ -59,7 +59,7 @@ public class VerdictChecker : MonoBehaviour
         // Checks weapon
         foreach (TMP_Dropdown dropdown in weaponDropdowns)
         {
-            if (dropdown.options[dropdown.value].text.CompareTo("TV") != 0)
+            if (dropdown.options[dropdown.value].text.CompareTo("Steering Wheel") != 0)
             {
                 isMatch = false;
             }
@@ -70,16 +70,16 @@ public class VerdictChecker : MonoBehaviour
         {
             string dropdownSelection = dropdown.options[dropdown.value].text;
 
-            if (dropdownSelection.CompareTo("TV") != 0 ||
-                dropdownSelection.CompareTo("TV") != 0 || 
-                dropdownSelection.CompareTo("TV") != 0)
+            if (dropdownSelection.CompareTo("Pay Rent") != 0 ||
+                dropdownSelection.CompareTo("Clean Up") != 0 || 
+                dropdownSelection.CompareTo("Pay for Groceries") != 0)
             {
                 isMatch = false;
             }
         }
 
         // Checks major motive
-        if (majorMotiveDropdown.options[majorMotiveDropdown.value].text.CompareTo("WiiCube") != 0)
+        if (majorMotiveDropdown.options[majorMotiveDropdown.value].text.CompareTo("Won Bario Going") != 0)
         {
             isMatch = false;
         }

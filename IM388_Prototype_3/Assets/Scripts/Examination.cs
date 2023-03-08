@@ -6,7 +6,8 @@ using TMPro;
 
 public class Examination : MonoBehaviour
 {
-    [SerializeField] EvidenceData evidenceData;
+    [SerializeField] EvidenceData primaryEvidence;
+    [SerializeField] List<EvidenceData> secondaryEvidence;
     [SerializeField] GameObject zoomedInSprite;
     [SerializeField] TextMeshProUGUI descriptionText;
     //[SerializeField] Image zoomedInImage;
@@ -40,12 +41,20 @@ public class Examination : MonoBehaviour
             else
             {
                 // If this evidence is new, update the found list
-                if (FoundEvidence.foundList[evidenceData.trackingIndex] == false)
+                if (FoundEvidence.foundList[primaryEvidence.trackingIndex] == false)
                 {
-                    FoundEvidence.foundList[evidenceData.trackingIndex] = true;
+                    FoundEvidence.foundList[primaryEvidence.trackingIndex] = true;
                 }
 
-                descriptionText.text = evidenceData.evidenceDescription;
+                foreach (EvidenceData evidence in secondaryEvidence)
+                {
+                    if (FoundEvidence.foundList[evidence.trackingIndex] == false)
+                    {
+                        FoundEvidence.foundList[evidence.trackingIndex] = true;
+                    }
+                }
+
+                descriptionText.text = primaryEvidence.evidenceDescription;
                 //zoomedInImage.sprite = evidenceData.evidenceSprite;
                 zoomedInSprite.SetActive(true);
             }
