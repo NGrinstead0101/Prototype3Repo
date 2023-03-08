@@ -12,7 +12,7 @@ public class VerdictChecker : MonoBehaviour
     [SerializeField] TMP_Dropdown[] minorMotivesDropdowns = new TMP_Dropdown[3];
     [SerializeField] TMP_Dropdown majorMotiveDropdown; 
 
-    private void CheckVerdict()
+    private bool CheckVerdict()
     {
         bool isMatch = true;
 
@@ -68,9 +68,6 @@ public class VerdictChecker : MonoBehaviour
             isMatch = false;
         }
 
-        if (isMatch)
-        {
-            // win the game
-        }
+        return isMatch;
     }
 }
