@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class VerdictChecker : MonoBehaviour
 {
@@ -18,13 +19,11 @@ public class VerdictChecker : MonoBehaviour
 
         if (isCorrect)
         {
-            // load win screen
-            Debug.Log("You solved the case!");
+            SceneManager.LoadScene("WinScene");
         }
         else
         {
-            // reset
-            Debug.Log("Your verdict was wrong");
+            SceneManager.LoadScene("LoseScene");
         }
     }
 
