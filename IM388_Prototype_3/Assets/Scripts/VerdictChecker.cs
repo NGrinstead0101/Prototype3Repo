@@ -12,12 +12,28 @@ public class VerdictChecker : MonoBehaviour
     [SerializeField] TMP_Dropdown[] minorMotivesDropdowns = new TMP_Dropdown[3];
     [SerializeField] TMP_Dropdown majorMotiveDropdown; 
 
+    public void ConfirmVerdict()
+    {
+        bool isCorrect = CheckVerdict();
+
+        if (isCorrect)
+        {
+            // load win screen
+            Debug.Log("You solved the case!");
+        }
+        else
+        {
+            // reset
+            Debug.Log("Your verdict was wrong");
+        }
+    }
+
     private bool CheckVerdict()
     {
         bool isMatch = true;
 
         // Checks date
-        if (dateDropdown.options[dateDropdown.value].text.CompareTo("") != 0)
+        if (dateDropdown.options[dateDropdown.value].text.CompareTo("TV") != 0)
         {
             isMatch = false;
         }
@@ -25,7 +41,7 @@ public class VerdictChecker : MonoBehaviour
         // Checks murderer's name
         foreach (TMP_Dropdown dropdown in murdererDropdowns)
         {
-            if (dropdown.options[dropdown.value].text.CompareTo("") != 0)
+            if (dropdown.options[dropdown.value].text.CompareTo("TV") != 0)
             {
                 isMatch = false;
             }
@@ -34,7 +50,7 @@ public class VerdictChecker : MonoBehaviour
         // Checks victim's name
         foreach (TMP_Dropdown dropdown in victimDropdowns)
         {
-            if (dropdown.options[dropdown.value].text.CompareTo("") != 0)
+            if (dropdown.options[dropdown.value].text.CompareTo("TV") != 0)
             {
                 isMatch = false;
             }
@@ -43,7 +59,7 @@ public class VerdictChecker : MonoBehaviour
         // Checks weapon
         foreach (TMP_Dropdown dropdown in weaponDropdowns)
         {
-            if (dropdown.options[dropdown.value].text.CompareTo("") != 0)
+            if (dropdown.options[dropdown.value].text.CompareTo("TV") != 0)
             {
                 isMatch = false;
             }
@@ -54,16 +70,16 @@ public class VerdictChecker : MonoBehaviour
         {
             string dropdownSelection = dropdown.options[dropdown.value].text;
 
-            if (dropdownSelection.CompareTo("") != 0 ||
-                dropdownSelection.CompareTo("") != 0 || 
-                dropdownSelection.CompareTo("") != 0)
+            if (dropdownSelection.CompareTo("TV") != 0 ||
+                dropdownSelection.CompareTo("TV") != 0 || 
+                dropdownSelection.CompareTo("TV") != 0)
             {
                 isMatch = false;
             }
         }
 
         // Checks major motive
-        if (majorMotiveDropdown.options[majorMotiveDropdown.value].text.CompareTo("") != 0)
+        if (majorMotiveDropdown.options[majorMotiveDropdown.value].text.CompareTo("WiiCube") != 0)
         {
             isMatch = false;
         }
