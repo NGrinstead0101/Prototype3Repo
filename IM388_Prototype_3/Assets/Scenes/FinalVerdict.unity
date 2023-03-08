@@ -360,9 +360,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameController
       objectReference: {fileID: 0}
+    - target: {fileID: 765724497795510164, guid: 4f0df185d5d42224ca9a71940bd0e62c, type: 3}
+      propertyPath: m_TagString
+      value: GameController
+      objectReference: {fileID: 0}
     - target: {fileID: 765724497795510186, guid: 4f0df185d5d42224ca9a71940bd0e62c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 765724497795510186, guid: 4f0df185d5d42224ca9a71940bd0e62c, type: 3}
       propertyPath: m_LocalPosition.x

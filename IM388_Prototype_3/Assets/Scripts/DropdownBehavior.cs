@@ -7,7 +7,7 @@ public class DropdownBehavior : MonoBehaviour
 {
     [SerializeField] TMP_Dropdown dropdownMenu;
     List<string> dropdownOptions = new List<string>();
-    [SerializeField] EvidenceTracker evidenceTracker;
+    EvidenceTracker evidenceTracker;
 
     /// <summary>
     /// When entering found verdict scene, updates the dropdowns with the 
@@ -15,6 +15,8 @@ public class DropdownBehavior : MonoBehaviour
     /// </summary>
     private void Awake()
     {
+        evidenceTracker = GameObject.FindGameObjectWithTag("GameController").GetComponent<EvidenceTracker>();
+
         dropdownMenu.ClearOptions();
 
         for (int i = 0; i < FoundEvidence.foundList.Length; ++i)
