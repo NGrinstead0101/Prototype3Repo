@@ -27,7 +27,6 @@ public class Note : MonoBehaviour
         if (follow == true)
         {
             transform.position = mousePosition;
-            Debug.Log(mousePosition);
         }
     }
     public void RevealNote(string noteContents)
