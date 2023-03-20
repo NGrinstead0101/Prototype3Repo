@@ -242,7 +242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -73}
+  m_AnchoredPosition: {x: 0, y: -97}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745203695
@@ -267,7 +267,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Click on evidence to add it to your notebook. right click opens notebook.
     when you feel like you have enough evidence to solve the mystery, go to the final
-    verdict scene
+    verdict scene. Press Escape to Quit.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -294,8 +294,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.4
-  m_fontSizeBase: 28.4
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -932,3 +932,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8acf3876431ef4f93612ab88c8e456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1971993123
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 496942416068961865, guid: c42d1d3a0aae7994383cd028a803e02f, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 496942416068961865, guid: c42d1d3a0aae7994383cd028a803e02f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 265.82724
+      objectReference: {fileID: 0}
+    - target: {fileID: 496942416068961865, guid: c42d1d3a0aae7994383cd028a803e02f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 171.24338
+      objectReference: {fileID: 0}
+    - target: {fileID: 496942416068961865, guid: c42d1d3a0aae7994383cd028a803e02f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.17783976
+      objectReference: {fileID: 0}
+    - target: {fileID: 496942416068961865, guid: c42d1d3a0aae7994383cd028a803e02f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 496942416068961865, guid: c42d1d3a0aae7994383cd028a803e02f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496942416068961865, guid: c42d1d3a0aae7994383cd028a803e02f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496942416068961865, guid: c42d1d3a0aae7994383cd028a803e02f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496942416068961865, guid: c42d1d3a0aae7994383cd028a803e02f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496942416068961865, guid: c42d1d3a0aae7994383cd028a803e02f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496942416068961865, guid: c42d1d3a0aae7994383cd028a803e02f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224653859543561882, guid: c42d1d3a0aae7994383cd028a803e02f, type: 3}
+      propertyPath: m_Name
+      value: QuitGame
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c42d1d3a0aae7994383cd028a803e02f, type: 3}

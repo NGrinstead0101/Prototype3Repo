@@ -570,14 +570,13 @@ MonoBehaviour:
   victimDropdowns:
   - {fileID: 157719765}
   - {fileID: 1044277826}
-  weaponDropdowns:
-  - {fileID: 842128873}
-  - {fileID: 699969123}
+  weaponDropdown: {fileID: 842128873}
   minorMotivesDropdowns:
   - {fileID: 1268137780}
   - {fileID: 1945249947}
   - {fileID: 1391631804}
   majorMotiveDropdown: {fileID: 677861243}
+  cleanupDropdown: {fileID: 699969123}
 --- !u!224 &636373269 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7852405603497082218, guid: a143d23c85cf11647ba79d6944a665ed, type: 3}
@@ -1082,7 +1081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1542,11 +1541,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6586612808579217094, guid: 8fe30117a72be5b49960618950f5b35b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.31216
+      value: -8.01
       objectReference: {fileID: 0}
     - target: {fileID: 6586612808579217094, guid: 8fe30117a72be5b49960618950f5b35b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.3820605
+      value: 4.3
       objectReference: {fileID: 0}
     - target: {fileID: 6586612808579217094, guid: 8fe30117a72be5b49960618950f5b35b, type: 3}
       propertyPath: m_LocalPosition.z
