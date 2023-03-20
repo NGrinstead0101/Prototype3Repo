@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c1f0db12c5f9754580a3ff990b5f9f3, type: 3}
-  m_Name: Date1
+  m_Name: RoommateB
   m_EditorClassIdentifier: 
   trackingIndex: 0
-  evidenceName: February 9th
-  evidenceDescription: It appears as if something written on the 9th was smudged
-    away.
+  evidenceName: Roommate  B (Green)
+  evidenceDescription: 
