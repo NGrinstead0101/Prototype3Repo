@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class VerdictChecker : MonoBehaviour
 {
@@ -18,13 +19,11 @@ public class VerdictChecker : MonoBehaviour
 
         if (isCorrect)
         {
-            // load win screen
-            Debug.Log("You solved the case!");
+            SceneManager.LoadScene("WinScene");
         }
         else
         {
-            // reset
-            Debug.Log("Your verdict was wrong");
+            SceneManager.LoadScene("LoseScene");
         }
     }
 
@@ -33,7 +32,7 @@ public class VerdictChecker : MonoBehaviour
         bool isMatch = true;
 
         // Checks date
-        if (dateDropdown.options[dateDropdown.value].text.CompareTo("February") != 0)
+        if (dateDropdown.options[dateDropdown.value].text.CompareTo("February 9th") != 0)
         {
             isMatch = false;
         }
@@ -41,7 +40,7 @@ public class VerdictChecker : MonoBehaviour
         // Checks murderer's name
         foreach (TMP_Dropdown dropdown in murdererDropdowns)
         {
-            if (dropdown.options[dropdown.value].text.CompareTo("TV") != 0)
+            if (dropdown.options[dropdown.value].text.CompareTo("Roommate C (Blue)") != 0)
             {
                 isMatch = false;
             }
@@ -50,7 +49,7 @@ public class VerdictChecker : MonoBehaviour
         // Checks victim's name
         foreach (TMP_Dropdown dropdown in victimDropdowns)
         {
-            if (dropdown.options[dropdown.value].text.CompareTo("TV") != 0)
+            if (dropdown.options[dropdown.value].text.CompareTo("Roommate D (Yellow)") != 0)
             {
                 isMatch = false;
             }
@@ -65,21 +64,35 @@ public class VerdictChecker : MonoBehaviour
             }
         }
 
+        bool gotOption1 = false;
+        bool gotOption2 = false;
+        bool gotOption3 = false;
+
         // Checks minor motives
         foreach (TMP_Dropdown dropdown in minorMotivesDropdowns)
         {
             string dropdownSelection = dropdown.options[dropdown.value].text;
 
-            if (dropdownSelection.CompareTo("Pay Rent") != 0 ||
-                dropdownSelection.CompareTo("Clean Up") != 0 || 
-                dropdownSelection.CompareTo("Pay for Groceries") != 0)
+            if (!gotOption1 && dropdownSelection.CompareTo("Pay Rent") == 0)
+            {
+                gotOption1 = true;
+            }
+            else if (!gotOption2 && dropdownSelection.CompareTo("Pay Groceries") == 0)
+            {
+                gotOption2 = true;
+            }
+            else if (!gotOption3 && dropdownSelection.CompareTo("Clean Up") == 0)
+            {
+                gotOption3 = true;
+            }
+            else
             {
                 isMatch = false;
             }
         }
 
         // Checks major motive
-        if (majorMotiveDropdown.options[majorMotiveDropdown.value].text.CompareTo("Won Bario Going") != 0)
+        if (majorMotiveDropdown.options[majorMotiveDropdown.value].text.CompareTo("Yellow Won Bario Going") != 0)
         {
             isMatch = false;
         }
