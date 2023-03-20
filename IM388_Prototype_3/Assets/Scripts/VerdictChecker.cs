@@ -9,9 +9,10 @@ public class VerdictChecker : MonoBehaviour
     [SerializeField] TMP_Dropdown dateDropdown;
     [SerializeField] TMP_Dropdown[] murdererDropdowns = new TMP_Dropdown[2];
     [SerializeField] TMP_Dropdown[] victimDropdowns = new TMP_Dropdown[2];
-    [SerializeField] TMP_Dropdown[] weaponDropdowns = new TMP_Dropdown[2];
+    [SerializeField] TMP_Dropdown weaponDropdown;
     [SerializeField] TMP_Dropdown[] minorMotivesDropdowns = new TMP_Dropdown[3];
     [SerializeField] TMP_Dropdown majorMotiveDropdown;
+    [SerializeField] TMP_Dropdown cleanupDropdown;
 
     public void ConfirmVerdict()
     {
@@ -56,13 +57,18 @@ public class VerdictChecker : MonoBehaviour
         }
 
         // Checks weapon
-        foreach (TMP_Dropdown dropdown in weaponDropdowns)
+        if (weaponDropdown.options[weaponDropdown.value].text.CompareTo("Steering Wheel") != 0)
         {
-            if (dropdown.options[dropdown.value].text.CompareTo("Steering Wheel") != 0)
-            {
-                isMatch = false;
-            }
+            isMatch = false;
         }
+
+        // Checks what killer cleaned up
+        if (cleanupDropdown.options[cleanupDropdown.value].text.CompareTo("SteeringWheel") != 0 ||
+            cleanupDropdown.options[cleanupDropdown.value].text.CompareTo("Victim's Arm") != 0)
+        {
+            isMatch = false;
+        }
+        
 
         bool gotOption1 = false;
         bool gotOption2 = false;

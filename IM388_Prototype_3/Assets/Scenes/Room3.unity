@@ -1543,11 +1543,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1378933801051565436, guid: c0fafb023ddf9674d83d5b3cd68fd452, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 123.6627
+      value: 162.1561
       objectReference: {fileID: 0}
     - target: {fileID: 1378933801051565436, guid: c0fafb023ddf9674d83d5b3cd68fd452, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 128.8153
+      value: 168.9126
       objectReference: {fileID: 0}
     - target: {fileID: 1378933801051565436, guid: c0fafb023ddf9674d83d5b3cd68fd452, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1579,11 +1579,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1378933801051565436, guid: c0fafb023ddf9674d83d5b3cd68fd452, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000041962
+      value: 4.697
       objectReference: {fileID: 0}
     - target: {fileID: 1378933801051565436, guid: c0fafb023ddf9674d83d5b3cd68fd452, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 42.5
+      value: 56.5
       objectReference: {fileID: 0}
     - target: {fileID: 1378933801051565436, guid: c0fafb023ddf9674d83d5b3cd68fd452, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1846,13 +1846,25 @@ PrefabInstance:
       value: -151
       objectReference: {fileID: 0}
     - target: {fileID: 9124079717888523554, guid: a5c03b00591b93748bef93a1c82ee611, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 286.1119
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124079717888523554, guid: a5c03b00591b93748bef93a1c82ee611, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 175.5531
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124079717888523554, guid: a5c03b00591b93748bef93a1c82ee611, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000045776
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124079717888523554, guid: a5c03b00591b93748bef93a1c82ee611, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 9124079717888523555, guid: a5c03b00591b93748bef93a1c82ee611, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3c267cd1933cae94a826e315b04b5c35, type: 3}
+      objectReference: {fileID: 21300000, guid: 470bc91f2a4674a48bcec438c2476a92, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5c03b00591b93748bef93a1c82ee611, type: 3}
 --- !u!114 &1704429852 stripped
