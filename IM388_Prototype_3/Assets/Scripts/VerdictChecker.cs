@@ -11,7 +11,7 @@ public class VerdictChecker : MonoBehaviour
     [SerializeField] TMP_Dropdown[] victimDropdowns = new TMP_Dropdown[2];
     [SerializeField] TMP_Dropdown[] weaponDropdowns = new TMP_Dropdown[2];
     [SerializeField] TMP_Dropdown[] minorMotivesDropdowns = new TMP_Dropdown[3];
-    [SerializeField] TMP_Dropdown majorMotiveDropdown; 
+    [SerializeField] TMP_Dropdown majorMotiveDropdown;
 
     public void ConfirmVerdict()
     {
