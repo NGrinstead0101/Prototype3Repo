@@ -839,7 +839,19 @@ MonoBehaviour:
     m_Options: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7852405603497082214}
+        m_TargetAssemblyTypeName: DropdownBehavior, Assembly-CSharp
+        m_MethodName: StoreNewValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &7852405603497082214
 MonoBehaviour:
@@ -854,7 +866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdownMenu: {fileID: 7852405603497082213}
-  evidenceTracker: {fileID: 0}
+  dropdownIndex: 0
 --- !u!1 &7852405603630377129
 GameObject:
   m_ObjectHideFlags: 0
