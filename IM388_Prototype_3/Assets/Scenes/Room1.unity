@@ -2415,6 +2415,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1094170765}
     m_Modifications:
+    - target: {fileID: 5773105470089065912, guid: 246cd68ca7ee24840904706fed1dbbeb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 575c8a36695dbd148b04fa7c7cbda609, type: 3}
+    - target: {fileID: 5773105470089065912, guid: 246cd68ca7ee24840904706fed1dbbeb, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773105470089065912, guid: 246cd68ca7ee24840904706fed1dbbeb, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773105470089065912, guid: 246cd68ca7ee24840904706fed1dbbeb, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5773105470089065913, guid: 246cd68ca7ee24840904706fed1dbbeb, type: 3}
       propertyPath: m_Name
       value: NotebookBackground
@@ -2501,6 +2517,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5773105470089065914, guid: 246cd68ca7ee24840904706fed1dbbeb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264597398764563360, guid: 246cd68ca7ee24840904706fed1dbbeb, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264597398764563360, guid: 246cd68ca7ee24840904706fed1dbbeb, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264597398764563360, guid: 246cd68ca7ee24840904706fed1dbbeb, type: 3}
+      propertyPath: m_fontColor.r
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
