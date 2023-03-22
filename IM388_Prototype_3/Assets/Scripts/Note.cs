@@ -26,7 +26,7 @@ public class Note : MonoBehaviour
 
     void Update()
     {
-        //set mousePostition
+        //set mousePostition. changed to screen to world point input
         mousePosition = Input.mousePosition;
         if (follow == true)
         {
@@ -58,4 +58,6 @@ public class Note : MonoBehaviour
     {
         follow = !follow;
     }
+
+
 }
