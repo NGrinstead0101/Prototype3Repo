@@ -11,5 +11,18 @@ public static class FoundEvidence
     { new Vector2(-6.5f, 0), new Vector2(-2.2f, 0), new Vector2(2.2f, 0), new Vector2(6.5f, 0) };
     public static string[] dropDownInputs = new string[11];
 
+    public static bool dateCorrect = true;
+    public static bool murdererCorrect = true;
+    public static bool victimCorrect = true;
+    public static bool weaponCorrect = true;
+    public static bool motivesCorrect = true;
+    public static bool cleanupCorrect = true;
+
+    public static void ResetVerdictBools()
+    {
+        dateCorrect = true;
+        murdererCorrect = true;
+    }
+
     // bool for shuffling?
 }

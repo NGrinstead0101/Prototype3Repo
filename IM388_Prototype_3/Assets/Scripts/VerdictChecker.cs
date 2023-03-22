@@ -16,6 +16,8 @@ public class VerdictChecker : MonoBehaviour
 
     public void ConfirmVerdict()
     {
+        
+
         bool isCorrect = CheckVerdict();
 
         if (isCorrect)
@@ -41,7 +43,7 @@ public class VerdictChecker : MonoBehaviour
         // Checks murderer's name
         foreach (TMP_Dropdown dropdown in murdererDropdowns)
         {
-            if (dropdown.options[dropdown.value].text.CompareTo("Roommate C (Blue)") != 0)
+            if (dropdown.options[dropdown.value].text.CompareTo("Roommate D (Yellow)") != 0)
             {
                 isMatch = false;
             }
@@ -50,7 +52,7 @@ public class VerdictChecker : MonoBehaviour
         // Checks victim's name
         foreach (TMP_Dropdown dropdown in victimDropdowns)
         {
-            if (dropdown.options[dropdown.value].text.CompareTo("Roommate D (Yellow)") != 0)
+            if (dropdown.options[dropdown.value].text.CompareTo("Roommate B (Green)") != 0)
             {
                 isMatch = false;
             }
@@ -98,7 +100,7 @@ public class VerdictChecker : MonoBehaviour
         }
 
         // Checks major motive
-        if (majorMotiveDropdown.options[majorMotiveDropdown.value].text.CompareTo("Yellow Won Bario Going") != 0)
+        if (majorMotiveDropdown.options[majorMotiveDropdown.value].text.CompareTo("Green Won Bario Going") != 0)
         {
             isMatch = false;
         }
