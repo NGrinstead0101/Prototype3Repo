@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: goTo
       value: Room3
       objectReference: {fileID: 0}
+    - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bc385d40749eaff4faffab2a2e4f56e8, type: 3}
     - target: {fileID: 2754495065471180193, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_Name
       value: Photo (1)
@@ -144,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8450668301711399702, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.124365
+      value: -6.53
       objectReference: {fileID: 0}
     - target: {fileID: 8450668301711399702, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_LocalPosition.y
@@ -353,6 +357,10 @@ PrefabInstance:
       propertyPath: goTo
       value: Room2
       objectReference: {fileID: 0}
+    - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e4d39775ea123ff4599ea34e73b68215, type: 3}
     - target: {fileID: 2754495065471180193, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_Name
       value: Photo (3)
@@ -363,11 +371,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8450668301711399702, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.126727
+      value: 6.53
       objectReference: {fileID: 0}
     - target: {fileID: 8450668301711399702, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.82442653
+      value: -0.76
       objectReference: {fileID: 0}
     - target: {fileID: 8450668301711399702, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1058,6 +1066,10 @@ PrefabInstance:
       propertyPath: goTo
       value: Room1
       objectReference: {fileID: 0}
+    - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8d7f02a1f425a4348880d91fd736d78c, type: 3}
     - target: {fileID: 2754495065471180193, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_Name
       value: Photo
@@ -1068,7 +1080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8450668301711399702, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.6873707
+      value: -2.18
       objectReference: {fileID: 0}
     - target: {fileID: 8450668301711399702, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1119,6 +1131,10 @@ PrefabInstance:
       propertyPath: goTo
       value: Room4
       objectReference: {fileID: 0}
+    - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1d720c6403af2a74babca0be976d5200, type: 3}
     - target: {fileID: 2754495065471180193, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_Name
       value: Photo (2)
@@ -1129,11 +1145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8450668301711399702, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.6664617
+      value: 2.23
       objectReference: {fileID: 0}
     - target: {fileID: 8450668301711399702, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7156396
+      value: -0.78
       objectReference: {fileID: 0}
     - target: {fileID: 8450668301711399702, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_LocalPosition.z

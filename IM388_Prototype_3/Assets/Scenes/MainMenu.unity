@@ -265,8 +265,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Click on evidence to add it to your notebook. right click opens notebook.
-    when you feel like you have enough evidence to solve the mystery, go to the final
+  m_text: Click on evidence to add it to your notebook. Right click opens notebook.
+    When you feel like you have enough evidence to solve the mystery, go to the final
     verdict scene. Press Escape to Quit.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
