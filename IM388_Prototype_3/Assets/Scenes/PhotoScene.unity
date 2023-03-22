@@ -142,6 +142,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Photo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5627569693280703869, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.9925
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627569693280703869, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.235
+      objectReference: {fileID: 0}
     - target: {fileID: 8450668301711399702, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -357,6 +365,10 @@ PrefabInstance:
       propertyPath: goTo
       value: Room2
       objectReference: {fileID: 0}
+    - target: {fileID: -2377720234280358815, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: posIndex
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -364,6 +376,14 @@ PrefabInstance:
     - target: {fileID: 2754495065471180193, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_Name
       value: Photo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627569693280703869, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627569693280703869, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.2375
       objectReference: {fileID: 0}
     - target: {fileID: 8450668301711399702, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_RootOrder
@@ -1066,6 +1086,10 @@ PrefabInstance:
       propertyPath: goTo
       value: Room1
       objectReference: {fileID: 0}
+    - target: {fileID: -2377720234280358815, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: posIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1073,6 +1097,14 @@ PrefabInstance:
     - target: {fileID: 2754495065471180193, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_Name
       value: Photo
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627569693280703869, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.995
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627569693280703869, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.2325
       objectReference: {fileID: 0}
     - target: {fileID: 8450668301711399702, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_RootOrder
@@ -1131,6 +1163,10 @@ PrefabInstance:
       propertyPath: goTo
       value: Room4
       objectReference: {fileID: 0}
+    - target: {fileID: -2377720234280358815, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: posIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1138,6 +1174,14 @@ PrefabInstance:
     - target: {fileID: 2754495065471180193, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_Name
       value: Photo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627569693280703869, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627569693280703869, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.24
       objectReference: {fileID: 0}
     - target: {fileID: 8450668301711399702, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_RootOrder
