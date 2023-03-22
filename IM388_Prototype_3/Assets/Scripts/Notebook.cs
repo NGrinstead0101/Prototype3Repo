@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Notebook : MonoBehaviour
 {
+    static bool gotInitialPos = false;
+
     [SerializeField] GameObject notebookUI;
     bool notebookActive = false;
     bool canClick = true;
@@ -20,9 +22,19 @@ public class Notebook : MonoBehaviour
     {
         noteObjects = GameObject.FindGameObjectsWithTag("Note");
 
-        foreach (GameObject noteObject in noteObjects)
+        if (!gotInitialPos)
         {
-            noteObject.SetActive(false);
+            gotInitialPos = true;
+            for (int i = 0; i < noteObjects.Length; ++i)
+            {
+                FoundEvidence.notePositions[i] = noteObjects[i].transform.position;
+            }
+        }
+
+        for (int i = 0; i < noteObjects.Length; ++i)
+        {
+            noteObjects[i].transform.position = FoundEvidence.notePositions[i];
+            noteObjects[i].SetActive(false);
         }
 
         noteScriptList = new Note[noteObjects.Length];
@@ -67,9 +79,10 @@ public class Notebook : MonoBehaviour
         }
         else
         {
-            foreach (GameObject noteObject in noteObjects)
+            for (int i = 0; i < noteObjects.Length; ++i)
             {
-                noteObject.SetActive(false);
+                FoundEvidence.notePositions[i] = noteObjects[i].transform.position;
+                noteObjects[i].SetActive(false);
             }
         }
     }
