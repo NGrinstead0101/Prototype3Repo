@@ -35,7 +35,13 @@ public class DropdownBehavior : MonoBehaviour
         if (!gotInitialVals)
         {
             gotInitialVals = true;
-            StoreNewValue();
+           
+            for (int i = 0; i < FoundEvidence.dropDownInputs.Length; ++i)
+            {
+                FoundEvidence.dropDownInputs[i] = dropdownMenu.options[dropdownMenu.value].text;
+            }
+
+            //StoreNewValue();
         }
 
         RetrieveValue();
