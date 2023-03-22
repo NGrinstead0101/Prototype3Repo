@@ -11,18 +11,30 @@ public class PhotoBehaviour : MonoBehaviour
     public bool dc;
     //position of mouse
     Vector2 mousePosition;
+
+    [SerializeField] int posIndex;
+    static bool gotInitialPositions = false;
     
 
     // Start is called before the first frame update
     void Start()
     {
         dc = false;
-        
+
+        if (gotInitialPositions)
+        {
+            transform.position = FoundEvidence.photoPositions[posIndex];
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!gotInitialPositions)
+        {
+            gotInitialPositions = true;
+        }
+
         //set mousePostition
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
@@ -49,6 +61,8 @@ public class PhotoBehaviour : MonoBehaviour
         {
             //set transform to mouse position
             transform.position = mousePosition;
+
+            FoundEvidence.photoPositions[posIndex] = transform.position;
         }
     }
 
