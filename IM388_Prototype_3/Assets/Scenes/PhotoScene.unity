@@ -135,6 +135,14 @@ PrefabInstance:
       value: Room3
       objectReference: {fileID: 0}
     - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_Size.x
+      value: 15.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_Size.y
+      value: 8.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: bc385d40749eaff4faffab2a2e4f56e8, type: 3}
@@ -203,6 +211,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1503029233}
     m_Modifications:
+    - target: {fileID: 5773105470089065912, guid: 246cd68ca7ee24840904706fed1dbbeb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 575c8a36695dbd148b04fa7c7cbda609, type: 3}
+    - target: {fileID: 5773105470089065912, guid: 246cd68ca7ee24840904706fed1dbbeb, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773105470089065912, guid: 246cd68ca7ee24840904706fed1dbbeb, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773105470089065912, guid: 246cd68ca7ee24840904706fed1dbbeb, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5773105470089065913, guid: 246cd68ca7ee24840904706fed1dbbeb, type: 3}
       propertyPath: m_Name
       value: NotebookBackground
@@ -368,6 +392,14 @@ PrefabInstance:
     - target: {fileID: -2377720234280358815, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: posIndex
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_Size.x
+      value: 15.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_Size.y
+      value: 8.95
       objectReference: {fileID: 0}
     - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_Sprite
@@ -1091,6 +1123,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_Size.x
+      value: 15.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_Size.y
+      value: 8.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8d7f02a1f425a4348880d91fd736d78c, type: 3}
@@ -1166,6 +1206,14 @@ PrefabInstance:
     - target: {fileID: -2377720234280358815, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: posIndex
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_Size.x
+      value: 15.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
+      propertyPath: m_Size.y
+      value: 8.94
       objectReference: {fileID: 0}
     - target: {fileID: 1696940955097005387, guid: 333426c0bcd96a34aaf28148f33f3836, type: 3}
       propertyPath: m_Sprite
