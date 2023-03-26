@@ -50,12 +50,17 @@ public class Notebook : MonoBehaviour
     /// </summary>
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.N) && canClick)
+        if ((Input.GetKeyDown(KeyCode.N) || Input.GetMouseButtonDown(1)) && canClick)
         {
-            canClick = false;
-            StartCoroutine(PreventDoubleClick());
-            ToggleNotebook();
+            NotebookClicked();
         }
+    }
+
+    public void NotebookClicked()
+    {
+        canClick = false;
+        StartCoroutine(PreventDoubleClick());
+        ToggleNotebook();
     }
 
     /// <summary>

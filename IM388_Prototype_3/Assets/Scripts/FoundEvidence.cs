@@ -11,5 +11,23 @@ public static class FoundEvidence
     { new Vector2(-6.5f, 0), new Vector2(-2.2f, 0), new Vector2(2.2f, 0), new Vector2(6.5f, 0) };
     public static string[] dropDownInputs = new string[11];
 
-    // bool for shuffling?
+    public static bool dateCorrect = true;
+    public static bool murdererCorrect = true;
+    public static bool victimCorrect = true;
+    public static bool weaponCorrect = true;
+    public static bool motivesCorrect = true;
+    public static bool cleanupCorrect = true;
+
+    /// <summary>
+    /// Called by VerdictChecker to reset what the player got right/wrong
+    /// </summary>
+    public static void ResetVerdictBools()
+    {
+        dateCorrect = true;
+        murdererCorrect = true;
+        victimCorrect = true;
+        weaponCorrect = true;
+        motivesCorrect = true;
+        cleanupCorrect = true;
+    }
 }
