@@ -1785,6 +1785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZoomedInCalendar
       objectReference: {fileID: 0}
+    - target: {fileID: 9124079716198739884, guid: a5c03b00591b93748bef93a1c82ee611, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9124079716198739885, guid: a5c03b00591b93748bef93a1c82ee611, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1871,23 +1875,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9124079717116031605, guid: a5c03b00591b93748bef93a1c82ee611, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -151
+      value: -189.72
       objectReference: {fileID: 0}
     - target: {fileID: 9124079717888523554, guid: a5c03b00591b93748bef93a1c82ee611, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 286.1119
+      value: 480.7077
       objectReference: {fileID: 0}
     - target: {fileID: 9124079717888523554, guid: a5c03b00591b93748bef93a1c82ee611, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 175.5531
+      value: 294.9537
       objectReference: {fileID: 0}
     - target: {fileID: 9124079717888523554, guid: a5c03b00591b93748bef93a1c82ee611, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000045776
+      value: 8.2
       objectReference: {fileID: 0}
     - target: {fileID: 9124079717888523554, guid: a5c03b00591b93748bef93a1c82ee611, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -11
+      value: 9.3
       objectReference: {fileID: 0}
     - target: {fileID: 9124079717888523555, guid: a5c03b00591b93748bef93a1c82ee611, type: 3}
       propertyPath: m_Sprite

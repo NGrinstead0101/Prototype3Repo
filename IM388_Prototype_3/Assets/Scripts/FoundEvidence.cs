@@ -18,11 +18,16 @@ public static class FoundEvidence
     public static bool motivesCorrect = true;
     public static bool cleanupCorrect = true;
 
+    /// <summary>
+    /// Called by VerdictChecker to reset what the player got right/wrong
+    /// </summary>
     public static void ResetVerdictBools()
     {
         dateCorrect = true;
         murdererCorrect = true;
+        victimCorrect = true;
+        weaponCorrect = true;
+        motivesCorrect = true;
+        cleanupCorrect = true;
     }
-
-    // bool for shuffling?
 }
