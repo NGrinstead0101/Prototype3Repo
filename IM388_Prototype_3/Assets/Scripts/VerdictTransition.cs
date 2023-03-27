@@ -28,6 +28,8 @@ public class VerdictTransition : MonoBehaviour
 
     public void ChangeScene()
     {
+        FoundEvidence.CheckPhotoPositions();
+
         SceneManager.LoadScene("FinalVerdict");
     }
 }
