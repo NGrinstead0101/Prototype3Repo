@@ -10,9 +10,15 @@ public class Examination : MonoBehaviour
     [SerializeField] List<EvidenceData> secondaryEvidence;
     [SerializeField] GameObject zoomedInSprite;
     [SerializeField] TextMeshProUGUI descriptionText;
+    Image zoomGradient;
     //[SerializeField] Image zoomedInImage;
 
     bool canBeClicked = true;
+
+    private void Awake()
+    {
+        zoomGradient = GameObject.FindGameObjectWithTag("Gradient").GetComponent<Image>();
+    }
 
     /// <summary>
     /// Stops examining when clicking anywhere
@@ -37,6 +43,7 @@ public class Examination : MonoBehaviour
             if (zoomedInSprite != null && zoomedInSprite.activeInHierarchy)
             {
                 zoomedInSprite.SetActive(false);
+                zoomGradient.enabled = false;
             }
             else
             {
@@ -57,6 +64,7 @@ public class Examination : MonoBehaviour
                 descriptionText.text = primaryEvidence.evidenceDescription;
                 //zoomedInImage.sprite = evidenceData.evidenceSprite;
                 zoomedInSprite.SetActive(true);
+                zoomGradient.enabled = true;
             }
         }
     }

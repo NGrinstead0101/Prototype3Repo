@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Victim'sArm
   m_EditorClassIdentifier: 
   trackingIndex: 0
-  evidenceName: Victim's Arm
+  evidenceName: Victim's Body
   evidenceDescription: The arm of the now dead victim. But who could have been in
     the room at the time?
