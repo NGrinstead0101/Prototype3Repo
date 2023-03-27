@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trackingIndex: 15
   evidenceName: Pay Groceries
-  evidenceDescription: A bill for Groceries. Someone isn't pulling their weight
+  evidenceDescription: A bill for groceries. Someone isn't pulling their weight.
