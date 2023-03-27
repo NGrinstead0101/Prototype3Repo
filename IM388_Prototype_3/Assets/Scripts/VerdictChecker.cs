@@ -81,7 +81,7 @@ public class VerdictChecker : MonoBehaviour
 
         // Checks what killer cleaned up
         if (cleanupDropdown.options[cleanupDropdown.value].text.CompareTo("Steering Wheel") != 0 &&
-            cleanupDropdown.options[cleanupDropdown.value].text.CompareTo("Victim's Arm") != 0)
+            cleanupDropdown.options[cleanupDropdown.value].text.CompareTo("Victim's Body") != 0)
         {
             Debug.Log("Clean up check failed");
             isMatch = false;
