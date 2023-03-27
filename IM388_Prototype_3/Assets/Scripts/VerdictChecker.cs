@@ -63,7 +63,7 @@ public class VerdictChecker : MonoBehaviour
         // Checks victim's name
         foreach (TMP_Dropdown dropdown in victimDropdowns)
         {
-            if (dropdown.options[dropdown.value].text.CompareTo("Roommate B (Green)") != 0)
+            if (dropdown.options[dropdown.value].text.CompareTo("Roommate C (Green)") != 0)
             {
                 Debug.Log("Victim check failed");
                 isMatch = false;
@@ -124,6 +124,12 @@ public class VerdictChecker : MonoBehaviour
             Debug.Log("Major motive check failed");
             isMatch = false;
             FoundEvidence.motivesCorrect = false;
+        }
+
+        // Checks photo positions
+        if (!FoundEvidence.photosCorrect)
+        {
+            isMatch = false;
         }
 
         return isMatch;
