@@ -50,7 +50,7 @@ public class Notebook : MonoBehaviour
     /// </summary>
     private void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.N) || Input.GetMouseButtonDown(1)) && canClick)
+        if (Input.GetKeyDown(KeyCode.N) && canClick)
         {
             NotebookClicked();
         }

@@ -150,3 +150,4 @@ MonoBehaviour:
   secondaryEvidence: []
   zoomedInSprite: {fileID: 0}
   descriptionText: {fileID: 0}
+  background: {fileID: 0}
