@@ -66,6 +66,15 @@ public class VerdictFeedback : MonoBehaviour
             incorrectData += "What got Cleaned-up, ";
         }
 
+        if (FoundEvidence.photosCorrect)
+        {
+            correctData += "Photo Order,";
+        }
+        else
+        {
+            incorrectData += "Photo Order,";
+        }
+
         feedbackText.text = "What you got correct: " + correctData + 
             "\n\nWhat you got wrong: " + incorrectData;
     }
