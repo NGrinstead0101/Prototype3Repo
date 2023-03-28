@@ -520,7 +520,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1378933801051565427, guid: c0fafb023ddf9674d83d5b3cd68fd452, type: 3}
       propertyPath: m_Name
-      value: CosoleButton
+      value: ConsoleButton
       objectReference: {fileID: 0}
     - target: {fileID: 1378933801051565432, guid: c0fafb023ddf9674d83d5b3cd68fd452, type: 3}
       propertyPath: evidenceData
