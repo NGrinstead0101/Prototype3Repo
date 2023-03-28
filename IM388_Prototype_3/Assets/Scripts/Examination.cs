@@ -13,6 +13,8 @@ public class Examination : MonoBehaviour
     //[SerializeField] Image zoomedInImage;
 
     bool canBeClicked = true;
+    //background
+    public GameObject background;
 
     /// <summary>
     /// Stops examining when clicking anywhere
