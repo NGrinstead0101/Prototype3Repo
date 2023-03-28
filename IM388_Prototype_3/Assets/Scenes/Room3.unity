@@ -424,11 +424,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1378933801051565436, guid: c0fafb023ddf9674d83d5b3cd68fd452, type: 3}
   m_PrefabInstance: {fileID: 105428037}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &111947589 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1378933801051565427, guid: c0fafb023ddf9674d83d5b3cd68fd452, type: 3}
-  m_PrefabInstance: {fileID: 1135268748}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &175790267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1612,7 +1607,7 @@ PrefabInstance:
     - target: {fileID: 1378933801051565432, guid: c0fafb023ddf9674d83d5b3cd68fd452, type: 3}
       propertyPath: background
       value: 
-      objectReference: {fileID: 111947589}
+      objectReference: {fileID: 1840454111}
     - target: {fileID: 1378933801051565432, guid: c0fafb023ddf9674d83d5b3cd68fd452, type: 3}
       propertyPath: zoomedInSprite
       value: 
